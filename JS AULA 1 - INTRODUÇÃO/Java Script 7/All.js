@@ -1,37 +1,37 @@
-//Substituição de texto em uma string:
+//substituicao de texto em uma string
 
-let texto = "Olá, mundo!!!";
-let novoTexto = texto.replace("mundo", "JavaScript"); 
-console.log(novoTexto); // Resultado: "Olá, JavaScript!"
-
-
-
-//Verificação de existência de uma substring em uma string:
-
-let texto2 = "Olá, mundo!";
-console.log(texto2.includes("mundo")); // Resultado: true 
-console.log(texto.includes("JavaScript")); // Resultado: false
+let texto = "Ola, mundo!";
+let novoTexto = texto.replace("mundo", "JavaScript");
+console.log(novoTexto);
 
 
 
-//Divisão de uma string em um array com base em um delimitador:
+//verificacao de existencia de uma substring em uma string
 
-let texto3 = "JavaScript é uma linguagem poderosa",
-let palavras = texto3.split(""); 
-console.log(palavras); // Resultado: ["lavascript", "e", "uma", "linguagem", "poderosa"]
-
-
-
-//Remoção de espaços em branco no início e no final de uma string:
-
-let texto4 = "Olá, mundo!";
-let novoTexto1 = texto.trim();
-console.log(novoTexto1); // Resultado: "Olá, mundo!
+let texto1 = "Ola, mundo!";
+console.log(texto1.includes("mundo"));
+console.log(texto1.includes("JavaScript"));
 
 
 
-//Verificação do inicio ou fim de uma string:
+//divisao de uma stringem um array com base em um delimitador
 
-let texto5 = "Olá, mundo!";
-console.log(texto5.startsWith("Ola")); // Resultado: true
-console.log(texto5.endsWith("mundo!")); // Resultado: true
+let texto2 = "JavaScript e uma linguagem poderosa";
+let palavras = texto2.split(" ");
+console.log(palavras);
+
+
+
+//remocao de espacos em branco no inicio e no final de uma string
+
+let texto3 = " Ola, mundo! ";
+let novoTexto1 = texto3.trim();
+console.log(novoTexto1);
+
+
+
+//verificacao do inicio ou fim de uma string
+
+let texto4 = "Ola, mundo!";
+console.log(texto.startsWith("Ola"));
+console.log(texto.endsWith("mundo!"));
