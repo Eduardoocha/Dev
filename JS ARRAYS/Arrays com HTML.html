@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exemplo de vetor</title>
+</head>
+<body>
+    
+    <h1>Exemplo de vetor</h1>
+    <p id="teste1">Conteúdo do vetor 1: </p>
+    <p id="teste2">Conteúdo do vetor 2: </p>
+    <p id="teste3">Segunda posição do vetor 1: </p>
+    <p id="teste4">Terceira posição do vetor 2: </p>
+    <script type="text/javascript">
+        
+// Criando os vetores
+    var cores1 = ['Verde', 'Amarelo', 'Azul', 'Branco'];
+    var cores2 = new Array('Laranja', 'Vermelho', 'Preto', 'Cinza');
+
+// Mostrar os conteúdos dos vetores
+    document.getElementById('teste1').innerHTML += cores1; 
+
+// insere o texto teste1 pela chamada do byId
+    document.getElementById('teste2').innerHTML += cores2;
+    document.getElementById('teste3').innerHTML += cores1[1];
+    document.getElementById('teste4').innerHTML += cores2[2];
+
+
+         </script>
+    </body>
+</html>
