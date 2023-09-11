@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laço de repetição FOR</title>
+</head>
+<body>
+    <h1>Laço de repetição FOR</h1>
+    <label for="numero">Digite um número:</label>
+    <input type="number" id="numero">
+    <button onclick="calcularTabuada()">Calcular Tabuada</button>
+    <p id="tabuada"></p>
+    <p id="total"></p>
+    
+    <script type="text/javascript">
+        function calcularTabuada() {
+
+            var num = parseInt(document.getElementById('numero').value);
+            var cont = 1;
+            var resposta = '';
+            var total = 0;
+
+            if (!isNaN(num)) {
+                for (cont = 1; cont <= 10; cont++) {
+                    var resultado = num * cont;
+                    resposta += num + ' X ' + cont + ' = ' + resultado +
+'<br>';
+                    total += resultado;
+            }
+
+                document.getElementById('tabuada').innerHTML = resposta;
+                document.getElementById('total').innerHTML = 'Total: ' +
+total;
+                } else {
+                    alert('Por favor, digite um número válido.');
+                }
+            }
+            
+    </script>
+<br>
+<h2>FUNÇÕES:</h2>
+<b>button onclick</b>: Criar o botao "Calcular Tabuada"
+<br>
+<b>!isNaN</b>: Verificar se foi usado um numero valido
+<br>
+<b>document.getElementById</b>: Mostra o valor atribuido e ID especificado
+<br>
+<b>parseInt(document.getElementById)</b>: É uma função do JavaScript que serve para retornar um elemento do DOM que é identificado por um ID específico
+
+</body>
+</html>
+
