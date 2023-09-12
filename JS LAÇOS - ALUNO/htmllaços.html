@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laço de repetição FOR</title>
+</head>
+<body>
+    <h1>Laço de repetição FOR:</h1>
+    <p id="tabuada"></p>
+
+    <script type="text/javascript">
+        var num = 5;
+        var cont = 1;
+        var resposta = '';
+
+        for(cont = 2; cont <= 20; cont++){
+            resposta += num + ' X ' + cont + ' = ' + num*cont + '<br>';
+    }
+
+        document.getElementById('tabuada').innerHTML = resposta;
+
+    </script>
+</body>
+</html>
