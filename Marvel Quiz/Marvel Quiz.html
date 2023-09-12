@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Marvel Quiz</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            text-align: center;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            margin: 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Primeira Pergunta</h1>
+    <h3>Qual desses personagens é o Thor</h3>
+
+    <script type="text/javascript">
+        function mudar(objeto, imagem) {
+            personagens1.src = imagem;
+        }  
+    </script><script type="text/javascript">
+        function mudarr(objeto, imagem) {
+            personagens2.src = imagem;
+        }  
+    </script><script type="text/javascript">
+        function mudarrr(objeto, imagem) {
+            personagens3.src = imagem;
+        }  
+    </script><script type="text/javascript">
+        function mudarrrr(objeto, imagem) {
+            personagens4.src = imagem;
+        }  
+    </script>
+
+    <a href="Acertou.html" target="_blank" onmouseover="mudar('personagens1', 'Thor.png')">
+        <img src="thor.png" border="0" id="personagens1">
+    </a><a href="Errou.html" target="_blank" onmouseover="mudarr('personagens2', 'homemdeferro.png')">
+        <img src="homemdeferro.png" border="0" id="personagens2">
+    </a><a href="Errou.htlm" target="_blank" onmouseover="mudarrr('personagens3', 'homemaranha.png')">
+        <img src="homemaranha.png" border="0" id="personagens3">
+    </a><a href="Errou.htlm" target="_blank" onmouseover="mudarrrr('personagens4', 'capitaoamerica.png')">
+        <img src="capitaoamerica.png" border="0" id="personagens4">
+    </a>
+
+</body>
+
+</html>

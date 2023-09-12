@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Controle de fluxo - break</title>
+</head>
+<body>
+    <h1>Controle de fluxo - break</h1>
+    <br>
+    <p id="resposta"></p>
+    <script type="text/javascript">
+        var resposta = '';
+        var cont = 0;
+
+        for(cont = 0; cont <= 10; cont++){
+            if(cont === 8){
+                break;
+            }
+            resposta += 'Valor da variável é: ' + cont + '<br />';
+    }
+    document.getElementById('resposta').innerHTML = resposta;
+    </script>
+<br>
+
+    <p><b>Teste feito por: Eduardo Fagundes Rocha</b></p> 
+</body>
+</html>

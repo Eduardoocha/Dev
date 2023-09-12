@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Atualização de Data e Hora</title>
+</head>
+    <style>
+        body {
+            background-color: rgb(82, 161, 51);
+            text-align: center;
+        }
+        img {
+            height: 300px;
+            width: 500px;
+        }
+    </style>
+
+
+
+<body>
+
+    <h1>Eduardo Fagundes Rocha</h1>
+
+  <div id="data-hora"></div>
+
+  <script>
+    function atualizarDataHora() {
+      const agora = new Date();
+      const dataHoraElement = document.getElementById('data-hora');
+      dataHoraElement.textContent = `Data e hora atual: ${agora.toLocaleString()}`;
+    }
+
+
+    atualizarDataHora();
+
+
+    setInterval(atualizarDataHora, 1000);
+  </script>
+
+  <br /><a onmouseover="mudare('Marvel', 'legiao_Marvel.png')" onmouseout="mudare('Marvel', 'Marvel_Logo.png')">
+    <img src="legiao_Marvel.png" border="0" id="Marvel">
+</a>
+
+<script type="text/javascript">
+    function mudare(objeto, imagem) {
+        Marvel.src = imagem;
+    }
+</script>
+
+<br /><a onmouseover="mudar('miranha', 'miranhaD.png')" onmouseout="mudar('miranha', 'miranhaE.png')">
+    <img src="miranhaD.png" border="0" id="miranha">
+</a>
+
+<script type="text/javascript">
+    function mudar(objeto, imagem) {
+        miranha.src = imagem;
+    }
+</script>
+
+<h2>Bauru 1000 graus</h2>
+
+</body>
+</html>

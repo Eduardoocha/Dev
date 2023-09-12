@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Controle de fluxo Complemento - break</title>
+</head>
+<body>
+    <h1>Controle de fluxo Complemento - break</h1><br>
+    <p id="numero"></p>
+    <script type="text/javascript">
+        var resposta = '';
+        var cont = 0;
+        var meuNome = "Eduardo Rocha"; 
+
+        resposta += 'Meu nome é ' + meuNome + '<br />';
+            for(cont = 2; cont <= 10; cont += 2){
+            resposta += 'Número par: ' + cont + '<br />';
+        }
+
+            for(cont = 1; cont <= 19; cont += 2){
+                resposta += 'Número ímpar: ' + cont + '<br />';
+            }
+
+            document.getElementById('numero').innerHTML = resposta;
+    </script>
+</body>
+</html>
